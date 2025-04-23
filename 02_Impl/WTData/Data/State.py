@@ -2,13 +2,14 @@
 import dataclasses
 from dataclasses import dataclass
 
-
 # External
 
 # Local
+from .DataInterface import DataInterface
 
-@dataclass
-class State:
+
+@dataclass(frozen=True)
+class State(DataInterface):
     valid: bool = dataclasses.Field(default=False)
     aileron: float = dataclasses.Field(default=0.0)
     elevator: float = dataclasses.Field(default=0.0)
