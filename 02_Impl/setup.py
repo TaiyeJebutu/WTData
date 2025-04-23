@@ -4,5 +4,5 @@ setup(
     name="WTData",
     version="0.1",
     description="WTData Package",
-    packages=["WTData"]
+    packages=find_packages(exclude=['test'])
 )

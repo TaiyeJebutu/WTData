@@ -1,1 +1,1 @@
-from StateMap import STATE_MAP
+from .StateMap import STATE_MAP
